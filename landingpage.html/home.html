@@ -1,77 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NextDevCollective</title>
-    <h1 class="firstheader">NextDevCollective</h1>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextDevCollective</title>
+<nav>
+  <h1>NextDevCollective</h1>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="landingpage.html">Landing</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+  </ul>
+</nav>
+
+
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-button {
+  background: white;
+  color: #4e54c8;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.member-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #4e54c8;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: white;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+.member-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.member-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.cta-button {
+  background: white;
+  color: #4e54c8;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: white;
+}
+
+
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="contact.html">Contact us</a>
-            <a href="about.html">About us</a>    
-            <a href="signup.html">Sign up</a>
-        </nav>
-        <h1 class="secondheader">Welcome to our page!!!</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Us :</h2>
-            <p>NextDevCollective is a community-driven platform for developers.</p>
-        </section>
-        <section>
-            <h2>Our Mission :</h2>
-            <p>To foster collaboration and innovation in the developer community.</p>
+  <header>
+    <nav>
+      <h1>NextDevCollective</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </section>
-        <section>
-            <h2>Members:</h2>
-            <h4>first member :</h4>
-            <ul>
-                <li>Name :Albert Kunda</li>
-                <li>Student ID:2420988</li>
-                <li>Role: Founder</li>
-                <li>Bio: passionate about building developer communities.</li>
-            </ul>
-            <h4>second member :</h4>
-            <ul>
-                <li>Name: Tafadzwa Mungandaire</li>
-                <li>Student ID: 2420974./li>
-                <li>Role: Co-Founder</li>
-                <li>Bio: Passionate about tech-prenuership, innovation, involving the girl child in digital development and making an impact</li>
-            </ul>
-            <h4>third memeber :</h4>
-            <ul>
-                <li>Name:Tatenda Mungandaire </li>
-                <li>Student ID: 2420986</li>
-                <li>Role: Member</li>
-                <li>Bio:an enthusiastic,passionate, engineer dedicated to making a lasting change</li>
-            </ul>
-            <h4>fourth memeber :</h4>
-            <ul>
-                <li>Name: Balica Mukange</li>
-                <li>Student ID: 2421009</li>
-                <li>Role: Member</li>
-                <li>Bio:To work akong with other developers in the community</li>
-            </ul>
-            <h4>fifth memeber :</h4>
-            <ul>
-                <li>Name: Limpo Mwenya Musonda</li>
-                <li>Student ID: 2420990</li>
-                <li>Role: Member</li>
-                <li>Bio:Innvotution Designer</li>
-            </ul>
-        </section>
+  <section class="hero">
+    <h2>Empowering Developers Through Collaboration</h2>
+    <p>Join a community where innovation meets impact.</p>
+    <a href="#signup" class="cta-button">Sign Up</a>
+  </section>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 NextDevCollective</p>
-    </footer>
+  <section id="about">
+    <h3>About Us</h3>
+    <p>NextDevCollective is a community-driven platform for developers. Our mission is to foster collaboration and innovation in the tech space.</p>
+  </section>
+
+  <section id="members">
+    <h3>Our Team</h3>
+    <div class="member-grid">
+      <!-- Repeat for each member -->
+      <div class="member-card">
+        <h4>Albert Kunda</h4>
+        <p>Founder — Passionate about building developer communities.</p>
+      </div>
+      <div class="member-card">
+        <h4>Tafadzwa Mungandaire</h4>
+        <p>Co-Founder — Techpreneur and advocate for digital inclusion.</p>
+      </div>
+      <div  class="member-card">
+        <h4>Tatenda Mungandaire</h4>
+        <p>
+Developer — Enthusiastic about open-source projects.
+        </p>
+      </div>
+      <div  class="member-card">
+        <h4>
+            Balica Mukange
+        </h4>
+        <p>
+            Designer- Loves crafting user-centric designs.
+        </p>
+      </div>
+      <div  class="member-card">
+        <h4>
+            Limpo Musonda
+        </h4>
+        <p>
+            scrum master- quality assurance 
+        </p>
+      </div>
+      <!-- Add others similarly -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <section class="hero">
+  <h1>Welcome to NextDevCollective</h1>
+  <p>Empowering developers through collaboration and innovation.</p>
+  <a href="#signup" class="cta-button">Join Us</a>
+</section>
+
+
+ <footer>
+  <p>&copy; 2025 NextDevCollective. All rights reserved.</p>
+</footer>
+
 </body>
-
 </html>
-
-
-
